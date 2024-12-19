@@ -35,6 +35,8 @@ def main():
         print(f"{digits} digits")
     except AssertionError as e:
         print(f"AssertionError: {e}")
+    except EOFError:
+        print("Quitting program")
 
 
 if __name__ == "__main__":
