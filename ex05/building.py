@@ -14,7 +14,7 @@ def main():
             argument = sys.argv[1]
         elif len(sys.argv) == 1:
             print("What is the text to count ?")
-            argument = input()
+            argument = input() + '\n'
         for char in argument:
             if char.isupper():
                 uppercase += 1
