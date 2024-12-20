@@ -10,6 +10,7 @@ def main():
         assert N.isdigit(), "the arguments are bad"
         N = int(N)
         assert isinstance(S, str), "the arguments are bad"
+        assert all(char.isalpha() or char.isspace() for char in S), "the arguments are bad"
     except AssertionError as e:
         print(f"AssertionError: {e}")
         return
