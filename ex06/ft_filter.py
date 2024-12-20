@@ -7,4 +7,4 @@ def ft_filter(S: str, N: int) -> str:
     of iterable for which function(item)
     is true. If function is None, return the items that are true.
     """
-    return [word for word in S.split() if len(word) > N]
+    return [word for word in S.split() if (lambda word: len(word) > N)(word)]
